@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    padding: 10px 100px;
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    width: 55px;
+
+}
+
+ul{
+    display: flex;
+    gap: 18px;
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    position: relative;
+}
+.search{
+    padding: 12px;
+    border-radius: 10px;
+}
+
+
+li a::after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: #fcb041;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -5px;
+    transition: all .5s;
+}
+li a:hover::after{
+    width: 100%;
+}
+
+
+
+
+
+.home{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.144)), url(3d-futuristic-background-with-low-poly-plexus-design.jpg) center/cover; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.home-content{
+    color: white;
+    text-align: center;
+}
+
+
+.home-content h1{
+    font-size: 90px;
+}
+
+.home-content h2{
+    font-size: 30px;
+}
+
+.home-content p{
+    padding: 15px 0;
+    font-size: 14px;
+  
+}
+
+
+.btn{
+    color: white;
+    background-color: rgb(255, 115, 0) ;
+    border-radius: 12px;
+    text-decoration: none;
+    padding: 16px 27px;
+    display: inline-block;
+    transition: all .4s;
+}
+
+
+
+/* 
+<!-- Skills section start -->
+<!-- Skills section start --> */
+
+
+.skills{
+    padding: 220px 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.heading{
+    font-size: 50px;
+    text-align: center;
+}
+
+.skills-box{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box{
+    padding: 25px 35px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(44, 44, 44);
+}
+
+#box-edit{
+    border: 3px solid rgb(255, 115, 0);
+    background-color:#ffe8c5;
+    cursor: pointer;
+}
+
+.skills-content p{
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+
+hr{
+    margin-bottom: 30px;
+}
